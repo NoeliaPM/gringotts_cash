@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titulos">40sp</dimen>
+    <dimen name="titulos_peq">35sp</dimen>
+    <dimen name="texto_plano">20sp</dimen>
+    <dimen name="texto_plano_peq">15sp</dimen>
+    <dimen name="pad_alto">20dp</dimen>
+    <dimen name="botones_contra">80dp</dimen>
+    <dimen name="texto_contra">26sp</dimen>
+    <dimen name="imagen_carga">300dp</dimen>
+    <dimen name="margen_izq_nuevo_movimiento">50dp</dimen>
+    <dimen name="margen_arriba_nuevo_movimiento">60dp</dimen>
+    <dimen name="pb_cambio_contra">100dp</dimen>
+    <dimen name="ancho_texto">300dp</dimen>
+    <dimen name="ancho_tx_nueva_contra">170dp</dimen>
+    <dimen name="moneda_boton">60dp</dimen>
+    <dimen name="spinner_width_producto">140dp</dimen>
+    <dimen name="spinner_width_tienda">170dp</dimen>
+    <dimen name="spinner_width_precio">100dp</dimen>
+    <dimen name="spinner_width_fecha">70dp</dimen>
+    <dimen name="img_icon_saldo">80dp</dimen>
+    <dimen name="img_icon_qr">150dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

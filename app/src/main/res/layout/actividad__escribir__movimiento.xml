@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad_Escribir_Movimiento">
+    <TextView
+        android:id="@+id/textView_Tienda"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Tienda:"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/doradoMedio"
+        app:layout_constraintStart_toEndOf="@+id/textView_Tienda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Producto:"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Tienda" />
+
+    <EditText
+        android:id="@+id/editText_Producto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/doradoMedio"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Precio:"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editText_Precio"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="@color/doradoMedio"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Producto" />
+
+    <Button
+        android:id="@+id/button_Comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="@color/doradoClaro"
+        android:text="Realizar operación"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Precio">
+
+        <RadioButton
+            android:id="@+id/radioButton_Compra"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/doradoOscuro"
+            android:text="Compra"
+            android:textCursorDrawable="@color/doradoOscuro"
+            android:textSize="@dimen/texto_plano" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Venta"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/doradoOscuro"
+            android:text="Venta"
+            android:textCursorDrawable="@color/doradoOscuro"
+            android:textSize="@dimen/texto_plano" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Moneda"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_Galleon"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/moneda_boton"
+        android:layout_height="@dimen/moneda_boton"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/galleon"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Producto" />
+
+    <Button
+        android:id="@+id/button_Sickles"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/moneda_boton"
+        android:layout_height="@dimen/moneda_boton"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/sickles"
+        app:layout_constraintStart_toEndOf="@+id/button_Galleon"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Producto" />
+
+    <Button
+        android:id="@+id/button_Knut"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/moneda_boton"
+        android:layout_height="@dimen/moneda_boton"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/knut"
+        app:layout_constraintStart_toEndOf="@+id/button_Sickles"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Producto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

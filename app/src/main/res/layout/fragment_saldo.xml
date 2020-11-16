@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Saldo">
+
+    <TextView
+        android:id="@+id/textView_Saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gringott"
+        android:gravity="center"
+        android:text="987654321"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_contra"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/button_cambio_moneda"
+        android:layout_width="@dimen/img_icon_saldo"
+        android:layout_height="@dimen/img_icon_saldo"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/cambio_monedas"
+        app:layout_constraintEnd_toStartOf="@+id/button_Hacer_donacion"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Saldo" />
+
+    <Button
+        android:id="@+id/button_Hacer_donacion"
+        android:layout_width="@dimen/img_icon_saldo"
+        android:layout_height="@dimen/img_icon_saldo"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/donar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Saldo" />
+
+    <Button
+        android:id="@+id/button_Enviar_dinero"
+        android:layout_width="@dimen/img_icon_saldo"
+        android:layout_height="@dimen/img_icon_saldo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/envio"
+        app:layout_constraintStart_toEndOf="@+id/button_Hacer_donacion"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Saldo" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Donación"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_plano_peq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Hacer_donacion" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text="Cambio\nde\nmoneda"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_plano_peq"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/button_cambio_moneda" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Envío\nde\ndinero"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_plano_peq"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/button_Enviar_dinero" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Hola Lucas,\ntu saldo total es de..."
+        android:textColor="@color/doradoOscuro"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/titulos_peq"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="40dp"
+        android:text="Aplicación oficial de Gringotts Bank"
+        android:textSize="@dimen/texto_plano_peq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/icon_remove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad_cambiar_contra">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/pb_cambio_contra"
+        android:layout_height="@dimen/pb_cambio_contra"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:foregroundTint="@android:color/holo_orange_dark"
+        android:indeterminateTint="@android:color/holo_orange_light"
+        android:progressBackgroundTint="@android:color/holo_orange_dark"
+        android:progressTint="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_espera_identidad"
+        android:layout_width="@dimen/ancho_texto"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Por favor, espera mientras nuestro sistema determina tu verdadera identidad."
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <TextView
+        android:id="@+id/textView_Identidad_confirmada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/gringott"
+        android:text="Identidad \nconfirmada"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titulos"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Nueva_contra"
+        android:layout_width="@dimen/ancho_tx_nueva_contra"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="90dp"
+        android:text="Nueva contraseña:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Identidad_confirmada" />
+
+    <EditText
+        android:id="@+id/editText_Nueva_contra"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="82dp"
+        android:backgroundTint="@color/doradoOscuro"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView_Nueva_contra"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Identidad_confirmada" />
+
+    <EditText
+        android:id="@+id/editText_repite_contra"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/doradoOscuro"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView_Repite_contra"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Nueva_contra" />
+
+    <TextView
+        android:id="@+id/textView_Repite_contra"
+        android:layout_width="@dimen/ancho_tx_nueva_contra"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Repite contraseña:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_plano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Nueva_contra" />
+
+    <Button
+        android:id="@+id/button_Guardar_nueva_contra"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/doradoMedio"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_espera_identidad" />
+</androidx.constraintlayout.widget.ConstraintLayout>

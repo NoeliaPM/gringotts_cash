@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gringottscash.Fragment_Saldo"
+        android:label="Saldo disponible"
+        tools:layout="@layout/fragment_saldo">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.gringottscash.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.gringottscash.Fragment_Ultimo_Movimiento"
+        android:label="Últimos movimientos"
+        tools:layout="@layout/fragment_ultimos_movimientos" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.gringottscash.Fragment_Nuevo_Movimiento"
+        android:label="Nuevo movimiento"
+        tools:layout="@layout/fragment_nuevo_movimiento" />
+    <fragment
+        android:id="@+id/nav_confi"
+        android:name="com.example.gringottscash.Fragment_Confi"
+        android:label="Configuración"
+        tools:layout="@layout/fragment__confi" />
+    <fragment
+        android:id="@+id/fragment_scan_or_new"
+        android:name="com.example.gringottscash.Fragment_scan_or_new"
+        android:label="fragment_scan_or_new"
+        tools:layout="@layout/fragment_scan_or_new" />
+    <fragment
+        android:id="@+id/fragment_scan_qr"
+        android:name="com.example.gringottscash.Fragment_scan_qr"
+        android:label="fragment_scan_qr"
+        tools:layout="@layout/fragment_scan_qr" />
+    <fragment
+        android:id="@+id/fragment_escribir_movimiento"
+        android:name="com.example.gringottscash.Fragment_escribir_movimiento"
+        android:label="fragment_escribir_movimiento"
+        tools:layout="@layout/fragment_escribir_movimiento" />
+</navigation>

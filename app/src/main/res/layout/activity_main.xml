@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad_contra">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/gringott"
+        android:text="Gringotts Cash"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/titulos"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_contra_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/doradoMedio"
+        android:text="Entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Contra"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="1"
+            android:textSize="@dimen/texto_contra"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="2"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="3"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="4"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="5"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="6"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="7"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="8"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="9"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button_asterisco"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="*"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="0"
+            android:textSize="@dimen/texto_contra" />
+
+        <Button
+            android:id="@+id/button_borrar"
+            android:layout_width="@dimen/botones_contra"
+            android:layout_height="@dimen/botones_contra"
+            android:backgroundTint="@color/doradoClaro"
+            android:text="#"
+            android:textSize="@dimen/texto_contra" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView_Contra"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/texto_contra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_olvido_contra"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="¿Has olvidado la contraseña?"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_contra_entrar" />
+
+    <Button
+        android:id="@+id/button_borrar_nuevo"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/borrar"
+        app:layout_constraintStart_toEndOf="@+id/textView_Contra"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
